@@ -1,0 +1,148 @@
+@font-face{
+    font-family: 'Tech';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor1: #195936;
+    --cor2: #daf2e5;
+    --estilo: bolder;
+    --fonte: Arial, Verdana, Helvetica, sans-serif;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    font-family: var(--fonte);
+}
+
+/* Cabeçalho */
+header{
+    text-align: center;
+    background-image: linear-gradient(#36c375, #195936);
+    color: white;
+    height: 200px;
+    width: 100%;
+    margin-top: -10px;
+  
+}
+
+header > h1{
+    margin: 0px;
+    padding-top: 30px;
+    
+}
+
+p#descricao{
+    width: 370px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > div#botoes_menu{
+    text-align: left;
+    vertical-align: bottom;
+    margin-top: 50px;
+    margin-left: 10px;
+    
+}
+
+header > div#botoes_menu > input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    color: white;
+}
+
+/* body */
+body{
+    background-color: #84e1ad;
+}
+
+article#corpo{
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    box-shadow: -3px 3px 10px 1px black;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+ h3, h2{
+    font-family: 'Tech';
+    color: #195936;
+    font-size: 1.5em;
+}
+ h3{
+    background-color: var(--cor2);
+}
+
+article > p{
+    text-indent: 20px; 
+}
+
+a{
+    color: var(--cor1);
+    font-weight: var(--estilo);
+}
+
+img{
+    width: 100%;
+}
+
+img#bugdroid{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+div#video_frame{
+    background-color: #436b54;
+    padding: 20px 40px;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* aside */
+aside{
+    margin: 10px 0px;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 0px;
+}
+
+p#titulo_curiosidades{
+    background-color: #36c375;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+ul#lista{
+    list-style-type: '\2714';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > p{
+    text-indent: 20px; 
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
