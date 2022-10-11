@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/style.css">
+    <link rel="stylesheet" type="text/css" href="estilos/media_query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Media Query</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p> Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et? Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et?</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Cupiditate corporis ipsam libero,
+                minima at accusantium nulla doloremque aspernatur voluptatibus,
+                corrupti eius provident quas,
+                nam minus quidem. Facilis, repellendus quod? Fugit. Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et?
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et? Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et?</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Cupiditate corporis ipsam libero,
+                minima at accusantium nulla doloremque aspernatur voluptatibus,
+                corrupti eius provident quas, Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et?
+                nam minus quidem. Facilis, repellendus quod? Fugit.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et? quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et?</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Cupiditate corporis ipsam libero,
+                minima at accusantium nulla Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Explicabo laboriosam perferendis 
+                quaerat voluptatem in eveniet quo ad accusamus maxime
+                incidunt error et unde hic aliquam, atque, voluptatibus, 
+                nostrum molestias. Et? doloremque aspernatur voluptatibus,
+                corrupti eius provident quas,
+                nam minus quidem. Facilis, repellendus quod? Fugit.
+            </p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = "block"
+            } else {
+                itens.style.display = "none"
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == "none"){
+                itens.style.display = "block"
+            } else {
+                itens.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
