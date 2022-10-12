@@ -1,0 +1,284 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+html, body{
+    height: 100%;
+}
+
+/* Uteis */
+div.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+div.clear{
+    clear: both;
+}
+
+/* Header */
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+/* Header Logo */
+header picture#logo{
+    float: left;
+}
+/* Header Menu */
+header nav#menu_desktop{
+    float: right;
+    position: relative;
+    top: 40px;
+}
+/* Header Menu desktop */
+header nav#menu_desktop ul{
+    list-style-type: none;
+}
+header nav#menu_desktop ul li{
+    float: left;
+    padding: 0 20px;
+}
+/* Header Menu desktop Texto */
+header nav#menu_desktop ul li a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+header nav#menu_desktop ul li:nth-of-type(1) a{
+    color: #EB2B2B;
+}
+/* Header Menu mobile */
+header nav#menu_mobile{
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+    cursor: pointer;
+    background-image: url("../images/icon_menu.png");
+    background-size: 100% 100%;
+}
+/* Header Menu mobile */
+header nav#menu_mobile ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    list-style-type: none;
+    border-bottom: 2px solid #EB2B2B;
+}
+header nav#menu_mobile ul li{
+    padding: 20px 0;
+    font-size: 23px;
+}
+/* Header Menu mobile Texto */
+header nav#menu_mobile ul li a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+header nav#menu_mobile ul li:nth-of-type(1) a{
+    color: #EB2B2B;
+}
+
+/* Section Banner */
+section#banner{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right; 
+}
+/* Section Banner Texto */
+section#banner div#text_banner{
+    padding: 100px 0px 0px 50px;
+}
+section#banner div.text_banner_single{
+    width: 300px;
+    height: 80px;
+    position: relative;
+    padding: 10px 3% 10px 3%;
+    margin-top: 10px;
+    color: white;
+    font-size: 43px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-image: url("../images/box-text.png");
+    background-size: 100% 100%;
+}
+section#banner div.text_banner_single:nth-of-type(2){
+    width: 210px;
+    left: -10px;
+}
+section#banner div.text_banner_single:nth-of-type(3){
+    width: 190px;
+    left: -20px;
+}
+section#banner div.text_banner_single:nth-of-type(4){
+    width: 487px;
+    height: 63px;
+    left: -30px;
+    font-size: 28px;
+    background-image: url("../images/box-white-text.png");
+    color: black;
+}
+
+/* Section veiculo_destaque */
+section#veiculos_destaque{
+    padding: 90px 2%;
+    height: 100%;
+}
+section#veiculos_destaque div.container{
+    max-width: 800px;
+}
+/* Section veiculo_destaque Texto e linhas*/
+section#veiculos_destaque h2{
+    width: 35%;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+section#veiculos_destaque div#line{
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+/* section Veiculos_destaque carros_vitrine */
+section#veiculos_destaque div.carros_vitrine{
+    width: 33.3%;
+    height: 200px;
+    margin: 60px 0;
+    float: left;
+    border: 5px solid white;
+}
+section#veiculos_destaque div.img_carro{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../images/carro1.jpg");
+    background-size: 100% 100%;
+}
+section#veiculos_destaque div.info_carro{
+    padding: 20px 0;
+}
+section#veiculos_destaque div.info_carro h2{
+    font-size: 20px;
+    width: 100%;
+    height: 28px;
+    text-align: left;
+    font-style: normal;
+}
+section#veiculos_destaque div.info_carro p{
+    font-size: 15px;
+    width: 100%;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+section#veiculos_destaque div.info_carro a{
+    padding: 5px 15px;
+    background-color: #EB2B2B;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 2px 2px 2px #B21E1E;
+}
+/*@media screen and (max-width: 1400px){
+    /* Section Banner 
+    section#banner{
+        background-size: 90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    /* Section Banner 
+    section#banner{
+        background-size: cover;
+        background-position: center;
+        height: 70vw;
+        min-height: 500px;
+    }
+}
+*/
+@media screen and (max-width: 720px){
+    /* Header Menu desktop */
+    header nav#menu_desktop{
+        display: none;
+    }
+    /* Header Menu mobile */
+    header nav#menu_mobile{
+        display: block;
+    }
+
+    section#veiculos_destaque div.carros_vitrine{
+        width: 80%;
+        margin: 500px auto;
+        float: none;
+    }
+    section#veiculos_destaque div.img_carro{
+        width: 100%;
+    }
+    section#veiculos_destaque div.m100{
+        margin-top: 70px;
+    }
+}
+
+
+@media screen and (max-width: 580px){
+    /* Section Banner Texto */
+    section#banner div#text_banner{
+        padding: 30px;
+    }
+    section#banner div.text_banner_single{
+        font-size: 18px;
+        width: 140px;
+        height: 50px;
+    }
+    section#banner div.text_banner_single:nth-of-type(2){
+        width: 120px;
+        left: -5px;
+    }
+    section#banner div.text_banner_single:nth-of-type(3){
+        width: 110px;
+        left: -10px;
+    }
+    section#banner div.text_banner_single:nth-of-type(4){
+        width: 228px;
+        height: 40px;
+        left: -15px;
+        font-size: 13px;
+    }
+
+    /* Section veiculo_destaque Texto e linhas*/
+    section#veiculos_destaque div#line{
+        top:50px;
+    }
+    section#veiculos_destaque h2{
+        height: 80px; 
+    }
+    section#veiculos_destaque div.carros_vitrine{
+        margin: 400px auto;
+    }
+    section#veiculos_destaque div.m100{
+        margin-top: 70px;
+    }
+}
