@@ -351,11 +351,89 @@ footer p{
 
 /* Pagina de venda */
 
-/* Section Venda */
-section#venda{
+/* Main Venda */
+main#venda{
     min-height: 100%;
     padding: 90px 0;
 }   
+main#venda section#content_venta{
+    margin-top: 40px;
+}
+main#venda section#content_venta div#side_bar{
+    float: left;
+    width: 30%;
+}
+main#venda section#content_venta div#side_bar h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+main#venda section#content_venta div#search1{
+    width: 300px;
+}
+main#venda section#content_venta div#search1 div#barra_preco{
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    position: relative;
+    border: 1px solid #CCC;
+    border-radius: 20px;
+}
+main#venda section#content_venta div#search1 div#barra_preco div#barra_preco_fill{
+    width: 30%;
+    height: 20px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+main#venda section#content_venta div#search1 div#barra_preco div#pointer_barra{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: absolute;
+    left: 65px;
+    top: -3px;
+}
+main#venda section#content_venta div#search1 div#valor_pesquisa{
+    margin-top: 10px;
+}
+main#venda section#content_venta div#search1 div#valor_pesquisa p{
+    font-size: 14px;
+    color: black;
+}
+main#venda section#content_venta div#search1 div#valor_pesquisa p:nth-of-type(1){
+    float: left;
+}
+main#venda section#content_venta div#search1 div#valor_pesquisa p:nth-of-type(2){
+    float: right;
+}
+/* Search2*/
+main#venda section#content_venta div#search2{
+    margin-top: 40px;
+}
+main#venda section#content_venta div#search2 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+main#venda section#content_venta div#search2 div.form_wraper{
+    margin-top: 10px;
+}
+main#venda section#content_venta div#search2 div.form_wraper span{
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1400px){
     /* Section Banner */
