@@ -22,6 +22,14 @@ div.container{
 div.clear{
     clear: both;
 }
+.red_button{
+    padding: 5px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #EB2B2B;
+    box-shadow: 2px 2px 2px #B21E1E;
+}
 
 /* Header */
 header{
@@ -52,9 +60,7 @@ header nav#menu_desktop ul li a{
     color: black;
     text-decoration: none;
 }
-header nav#menu_desktop ul li:nth-of-type(1) a{
-    color: #EB2B2B;
-}
+
 /* Header Menu mobile */
 header nav#menu_mobile{
     display: none;
@@ -89,9 +95,7 @@ header nav#menu_mobile ul li a{
     color: black;
     text-decoration: none;
 }
-header nav#menu_mobile ul li:nth-of-type(1) a{
-    color: #EB2B2B;
-}
+
 
 /* Section Banner */
 section#banner{
@@ -146,8 +150,8 @@ section#veiculos_destaque div.container{
     max-width: 800px;
 }
 /* Section veiculo_destaque Texto e linhas*/
-section#veiculos_destaque h2{
-    width: 35%;
+h2.titulo{
+    width: 28%;
     height: 40px;
     font-size: 28px;
     font-weight: 400;
@@ -156,7 +160,7 @@ section#veiculos_destaque h2{
     position: relative;
     background-color: rgb(255, 255, 255);
 }
-section#veiculos_destaque div#line{
+div.line{
     height: 2px;
     background-color: black;
     width: 100%;
@@ -193,16 +197,168 @@ section#veiculos_destaque div.info_carro p{
     font-style: normal;
     margin-bottom: 10px;
 }
-section#veiculos_destaque div.info_carro a{
-    padding: 5px 15px;
-    background-color: #EB2B2B;
-    font-size: 20px;
-    text-decoration: none;
+
+
+/* Section servicos_descricao */
+section#servicos_descricao{
+    width: 100%;
     color: white;
-    box-shadow: 2px 2px 2px #B21E1E;
+    display: flex;
 }
-/*@media screen and (max-width: 1400px){
-    /* Section Banner 
+article.infos{
+    width: 50%;
+    padding: 80px 0;
+    text-align: center;
+}
+/* Section servicos_descricao cores de fundo */
+article.dark{
+    background-color: #242424;
+}
+article.red{
+    background-color: #EB2B2B;
+}
+section#servicos_descricao div.container{
+    padding: 0 5%;
+    width: 80%;
+    text-align: left;
+}
+section#servicos_descricao div.container h2{
+    font-weight: 300;
+    font-size: 33px;
+    margin-left: -30px;
+}
+section#servicos_descricao div.container ul{
+    display: inline-block;
+    font-size: 18px;
+}
+section#servicos_descricao div.container li{
+    font-size: 18px;
+}
+section#servicos_descricao  a{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 15%;
+    font-style: normal;
+}
+section#servicos_descricao quote{
+    font-size: 20px;
+}
+section#servicos_descricao div#dep{
+    max-width: 700px;
+    margin-top: 10px;
+}
+section#servicos_descricao div#dep img{
+    padding-right: 20px;
+}
+section#servicos_descricao p{
+    font-size: 20px;
+    float: right;
+    color:#242424
+}
+
+/* Section Formulario */
+section#formulario{
+    margin-top: 50px;
+}
+section#formulario div.container{
+    width: 80%;
+}
+/* Section Formulario Título */
+section#formulario h2{
+    width: 35%;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+section#formulario div#line{
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+/* Section Formulário inputs */
+section#formulario input[type=text], section#formulario textarea{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+}
+section#formulario div#infos_pessoais{
+    font-size: 20px;
+    display: flex;
+}
+section#formulario div#infos_pessoais input.infos_dados{
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+}
+section#formulario div#infos_pessoais input[type=tel]{
+    margin-left: 5%;
+}
+section#formulario textarea{
+    min-height: 100px;
+    max-height: 100px;
+    resize: none;
+}
+section#formulario div#form_button{
+    text-align: center;
+}
+section#formulario input[type=submit]{
+    border: none;
+    margin: auto;
+    display: inline-block;
+    padding: 3px 50px;
+}
+
+/* Footer */
+footer{
+    margin-top: 40px;
+    padding: 40px 2%;
+    background-color: #252525;
+}
+footer nav{
+    float: left;
+}
+/* footer Menu desktop */
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    float: left;
+    padding: 0 20px;
+}
+/* footer Menu desktop Texto */
+footer nav ul li a{
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer p{
+    float: right;
+    color: white;
+    font-size: 20px;
+}
+
+/* Pagina de venda */
+
+/* Section Venda */
+section#venda{
+    min-height: 100%;
+    padding: 90px 0;
+}   
+
+@media screen and (max-width: 1400px){
+    /* Section Banner */
     section#banner{
         background-size: 90% auto;
         background-position: 200% 100%;
@@ -210,7 +366,7 @@ section#veiculos_destaque div.info_carro a{
 }
 
 @media screen and (max-width: 1024px){
-    /* Section Banner 
+    /* Section Banner */
     section#banner{
         background-size: cover;
         background-position: center;
@@ -218,7 +374,17 @@ section#veiculos_destaque div.info_carro a{
         min-height: 500px;
     }
 }
-*/
+
+@media screen and (max-width: 1200px){
+    section#servicos_descricao  a{
+        margin-top: 15px;
+        margin-left: 0;
+        display: block;
+        max-width: 110px;
+
+    }
+}
+
 @media screen and (max-width: 720px){
     /* Header Menu desktop */
     header nav#menu_desktop{
@@ -231,15 +397,42 @@ section#veiculos_destaque div.info_carro a{
 
     section#veiculos_destaque div.carros_vitrine{
         width: 80%;
-        margin: 500px auto;
-        float: none;
+        margin: 40px auto 500px auto;
     }
     section#veiculos_destaque div.img_carro{
         width: 100%;
     }
-    section#veiculos_destaque div.m100{
-        margin-top: 70px;
+
+    section#servicos_descricao{
+        flex-direction: column;
     }
+    section#servicos_descricao article.infos{
+        width: 100%;
+    }
+
+    section#formulario form{
+        margin-top: 50px;
+    }
+    section#formulario div#infos_pessoais{
+        display: block;
+    }
+    section#formulario div#infos_pessoais input.infos_dados{
+        width: 100%;
+    }
+    section#formulario div#infos_pessoais input[type=tel]{
+        margin-left: 0;
+    }
+
+    footer{
+        text-align: center;
+    }
+    footer nav{
+        display: none;
+    }
+    footer p{
+        float: none;
+    }
+
 }
 
 
@@ -276,9 +469,6 @@ section#veiculos_destaque div.info_carro a{
         height: 80px; 
     }
     section#veiculos_destaque div.carros_vitrine{
-        margin: 400px auto;
-    }
-    section#veiculos_destaque div.m100{
-        margin-top: 70px;
+        margin: 40px auto 400px auto;
     }
 }
