@@ -125,6 +125,9 @@ section#venda{
 section#venda div.container + div.container{
     padding: 40px 2% 350px 2%;
 }
+section#venda div.container  div.line{
+    margin-top: 80px;
+}
 section#venda div#fotos_veiculo{
     float: left;
     width: 60%;
