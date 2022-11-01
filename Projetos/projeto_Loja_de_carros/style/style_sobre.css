@@ -98,13 +98,17 @@ header nav#menu_mobile ul{
     top: 130px;
     z-index: 1;
     text-align: center;
-    background-color: white;
+    background-color: rgb(189, 189, 189);
     list-style-type: none;
     border-bottom: 2px solid #EB2B2B;
 }
 header nav#menu_mobile ul li{
     padding: 20px 0;
     font-size: 23px;
+    border-bottom: 1px solid #313131;
+}
+header nav#menu_mobile ul li:hover{
+    background-color: rgb(110, 110, 110);
 }
 /* Header Menu mobile Texto */
 header nav#menu_mobile ul li a{
