@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Úteis */
+.clear{clear: both;}
+.container{
+    max-width: 980px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/* Section Header */
+section.header-master{
+    width: 100%;
+    padding: 30px 0;
+    min-height: 600px;
+    background-image: url("../images/bg_01.png");
+    background-size: cover;
+}
+/* Header */
+Header{
+    border-bottom: 3px solid rgba(71, 83, 88, 0.15);
+    padding-bottom: 20px;
+}
+/* Header logo */
+header div.header-logo{
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url("../images/logo.png");
+    background-size: 100%;
+}
+/* Header menu */
+header nav{
+    float: left;
+    padding-left: 45px;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 15px;
+    color: white;
+}
+header nav ul li.selected{
+    color: #509d87;
+    position: relative;
+}
+header nav ul li.selected > span{
+    background-color: #509d87;
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Header Fone */
+header div.header-fone{
+    float: right;
+    position: relative;
+    top: -5px;
+} 
+header div.header-fone span{
+    font-size: 25px;
+    color: white;
+} 
