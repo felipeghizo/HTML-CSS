@@ -10,16 +10,16 @@
 /* Úteis */
 .clear{clear: both;}
 .container{
-    max-width: 980px;
+    max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
 }
 
-/* Section Header */
+/* Section Header 1 */
 section.header-master{
     width: 100%;
     padding: 30px 0;
-    min-height: 600px;
+    min-height: 800px;
     background-image: url("../images/bg_01.png");
     background-size: cover;
 }
@@ -75,3 +75,93 @@ header div.header-fone span{
     font-size: 25px;
     color: white;
 } 
+/* Section Header 2 */
+section.header-master div.header-content{
+    padding: 50px 0;
+}
+/* Section Header 2 Article */
+section.header-master article{
+    float: left;
+    width: 50%;
+}
+/* Section Header 2 Article text */
+section.header-master article h2{
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+section.header-master article p{
+    padding-top: 10px;
+    text-indent: 15px;
+}
+section.header-master article span{
+    display: inline-block;
+    padding-top: 10px;
+    color: #509d87;
+}
+/* Section Header 2 Article form */
+section.header-master article form{
+    padding-top: 20px;
+}
+/* Section Header 2 Article form input*/
+section.header-master article form input{
+    display: inline-block;
+}
+/* Section Header 2 Article form input email*/
+section.header-master article form input[type=email]{
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 25px;
+    padding-left: 20px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+/* Section Header 2 Article form input submit*/
+section.header-master article form input[type=submit]{
+    background-color: #00daaa;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 17px;
+}
+section.header-master article form input[type=submit]:hover{
+    background-color: #01b68f;
+}
+
+/* Section Header 2 Aside */
+section.header-master aside{
+    float: left;
+    width: 50%;
+}
+/* Section Header 2 Aside img */
+section.header-master aside img{
+    height: 220px;
+    width: 220px;
+    border: 10px solid rgba(0,0,0,0);
+}
+
+
+@media screen and (max-width: 768px){
+    section.header-master{
+        min-height: 600px;
+    }
+    header nav.desktop{
+        display: none;
+    }
+    header div.header-fone{
+        display: none;
+    } 
+    section.header-master aside{
+        display: none;
+    }
+    section.header-master article{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
